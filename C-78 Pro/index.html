@@ -1,0 +1,27 @@
+<html>
+    <head>
+      <title>Project C-78</title>
+      <script>
+        var Family_members = ["Me, Arvan Kumar Paul", "My Brother, Arunabha Paul","My Mother, Susmita Paul","My Father, Amit Kumar Paul","My Grandfather, Kartic Chandra Paul"]; 
+        var Family_members_pic = ["Amit.jpg","Arunabha.jpg","Susmita.jpg","Arvan.jpg","Grandfather.jpg"] 
+          
+          function nextslide() {
+            for (var i = 0; i <= 5; i++) {
+            var Change_images = Family_members_pic[i];
+            var Change_name = Family_members[i];
+
+            document.getElementById("imagepreview").src = Change_images;
+            document.getElementById("imagepreview").src = Change_name;
+
+          }
+        }
+      </script>
+    </head>
+    <body style="background-color: blueviolet; text-align: center;">
+      <img src="Family Book.jpg" id="imagepreview">
+      <br>
+      <br>
+      <button id="next" onclick="nextslide()">Next</button>
+      <p id="member_name"></p>
+    </body>
+</html>
